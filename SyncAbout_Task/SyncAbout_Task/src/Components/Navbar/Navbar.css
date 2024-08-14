@@ -1,0 +1,82 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: serif;
+}
+#navbar{
+    height: 90px;
+    background: transparent;
+    width: 95%;
+    padding-top: 10px;
+    padding-left: 20px;
+    position: absolute;
+}
+.navContainer{
+    display: flex;
+}
+.logoDesign{
+    height: 55px;
+    width: 250px;
+    display: flex;
+    position: relative;
+}
+.consultant{
+    position: absolute;
+    top: 57px;
+    left: 0;
+}
+.logoText{
+    color:  #ED95B4;
+}
+/* navlist */
+.navbarList{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    list-style-type: none;
+}
+.navbarList li:hover {
+    color: #ED95B4;
+    cursor: pointer;
+}
+.number {
+    height: 40px;
+    border-image: linear-gradient(to right, #A953DC 0%, #ED95B4 100%) 1;
+    border-width: 1px;
+    border-style: solid;
+    padding: 0 10px;
+    align-content: center;
+    margin-left: 50px;
+    margin-top: 10px;
+  }
+
+  /* Media query for 576px */
+@media (max-width: 576px) { 
+    #navbar{
+        height: 80px;
+        width: 100%;
+    }
+    .navContainer{
+        justify-content: space-around;        
+    }
+    .consultant{
+        position: absolute;
+        top: 55px;
+        left: 10px;
+        font-size: 12px !important;
+    }
+    .navbarList {
+        display: none;
+    }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 768px) {  }
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 992px) {  }
+
+/* /Large devices (desktops, less than 1200px) */
+@media (max-width: 1200px) {  }

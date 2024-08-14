@@ -1,0 +1,100 @@
+
+#HeaderWrapper{
+    width: 100%;
+    padding-top: 100px;
+    background: linear-gradient(#262360,#A953DC);
+    color: white;
+    margin: auto;
+}
+.background{
+    background: url(../../../Images/backgroundBlob.png) no-repeat left center/contain;
+    margin-top: 50px;
+    height: 495px;
+    overflow: hidden;
+}
+#header{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left{
+    width: 45%;
+}
+.right{
+    width: 45%;
+    margin-right: 50px;
+}
+.right img{
+    width: 100%;
+}
+.headerList{
+    font-size: 20px;
+    line-height: 25px;
+    list-style-type: circle;
+    margin-left: 30px;
+}
+.headerList li::marker{
+    color: pink;
+    font-size: 1.8em;
+}
+.headerButtons Button{
+    color: white;
+}
+#button1{
+    border-image: linear-gradient(to right, #A953DC 0%, #ED95B4 100%) 1;
+    border-width: 1px;
+    border-style: solid;
+    padding: 0 10px;
+    align-content: center;
+    margin-right: 30px;
+}
+#button1:hover{
+    background: linear-gradient(90deg, #A953DC, #ED95B4);
+}
+#button2{
+    background: linear-gradient(90deg, #A953DC, #ED95B4);
+    border: 1px solid rgb(204, 162, 168);
+}
+#button2:hover{
+    border-width: 1px;
+    border-style: solid;
+    border-image: linear-gradient(to right, #b262e0 0%, #ED95B4 100%) 1;
+    background: transparent;
+}
+
+/* Media query for 576px */
+@media (max-width: 576px) { 
+    #HeaderWrapper{
+        padding-bottom: 20px;
+    }
+    #header{
+        justify-content: center;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .left{
+        width: 70%;
+        font-size: 20px !important;
+    }
+    .right{
+        width: 70%;
+        margin-right: 0;
+    }
+    .headerList{
+        display: none;
+    }
+    .headerButtons Button{
+       display: none;
+    }
+ }
+
+ /* Small devices (landscape phones, less than 768px) */
+@media (max-width: 768px) {  }
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 992px) {  }
+
+/* /Large devices (desktops, less than 1200px) */
+@media (max-width: 1200px) {  }
